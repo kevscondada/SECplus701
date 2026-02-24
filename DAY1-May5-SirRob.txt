@@ -89,12 +89,12 @@ show ip ssh
 
 WARNING: IF YOU SEE AMBER/ORANGE= NEEDS FIXING!!!
 
-Trunk Ports: switch to switch:
+Trunk Ports: switch to switch: PASTE MUNA SA TAAS
 TAAS/BABA:
 config t
 Int Range fa0/10-12
- shutdown
- no shutdown
+ !shutdown
+ !no shutdown
  switchport trunk Encap Dot1Q
  switchport mode trunk
  do sh int trunk
@@ -189,16 +189,16 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.12.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0704.7f5b
 ip dhcp pool CAMERA8
 host 10.12.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0704.7f5b
 end
 show ip dhcp binding
 
 TASK2***TASK2***TASK2***
 TASK2***TASK2***TASK2***
-CALLMANAGER EXPRESS CONFIGURATION FOR VOIP/TELEPHONY ENGINEERS
+CALLMANAGER EXPRESS CONFIGURATION FOR Incident Responders/Threat Management
 !!cisco unified call manager Express command
 !@@@CUCM-M
 config t
@@ -220,7 +220,7 @@ config t
 	 ip add 10.12.100.8 255.255.255.0 
 	 end
    
-!!!CUCM ANALOG PHONES CONFIG
+!!!CUCM ANALOG PHONES CONFIG: cyberHOTLINE: 224-227
 configure terminal
 dial-peer voice 1 pots
    destination-pattern 1200
@@ -267,12 +267,12 @@ ephone-dn 8
 ephone-dn 10
  number 1298
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 64e9.50ca.747e
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address ccd8.c1fb.161b
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
@@ -660,4 +660,5 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
