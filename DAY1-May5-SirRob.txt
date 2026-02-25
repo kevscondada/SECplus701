@@ -192,7 +192,7 @@ host 10.12.50.6 255.255.255.0
 client-identifier 001a.0704.7f5b
 ip dhcp pool CAMERA8
 host 10.12.50.8 255.255.255.0
-client-identifier 001a.0704.7f5b
+client-identifier 001a.0709.c258
 end
 show ip dhcp binding
 
@@ -364,6 +364,14 @@ dial-peer voice 81 Voip
 dial-peer voice 82 Voip
  destination-pattern 82..
  session target ipv4:10.82.100.8
+ codec g711ULAW
+dial-peer voice 91 Voip
+ destination-pattern 91..
+ session target ipv4:10.91.100.8
+ codec g711ULAW
+dial-peer voice 92 Voip
+ destination-pattern 92..
+ session target ipv4:10.92.100.8
  codec g711ULAW
 
 TASK3***TASK3***TASK3***
@@ -660,5 +668,6 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
 
